@@ -1,0 +1,18 @@
+[project]
+name = "mcp-security-gateway"
+version = "0.1.0"
+description = "MCP security gateway: Bearer-token roles and tool-level authorization for JSON-RPC"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=2.3.0",
+    "pyjwt>=2.15.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "anyio>=4.15.1",
+    "pytest>=9.2.0",
+]

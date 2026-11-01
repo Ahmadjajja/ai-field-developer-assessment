@@ -1,0 +1,15 @@
+[project]
+name = "model-router"
+version = "0.1.0"
+description = "LLM gateway model router: token-aware rate limiting (SQLite) and provider fallback"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.0",
+    "httpx>=0.28.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
